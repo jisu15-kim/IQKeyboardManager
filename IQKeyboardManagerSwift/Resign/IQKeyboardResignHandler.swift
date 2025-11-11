@@ -79,7 +79,7 @@ import IQTextInputViewNotification
     @discardableResult
     public func resignFirstResponder() -> Bool {
 
-        guard let textInputView: any IQTextInputView = textInputViewObserver.textInputView else {
+        guard let textInputView = textInputViewObserver.textInputView else {
             return false
         }
 
